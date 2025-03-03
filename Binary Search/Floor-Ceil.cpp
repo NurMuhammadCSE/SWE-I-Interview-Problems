@@ -60,44 +60,44 @@ pair<int, int> getFloorAndCeil(vector<int> &a, int n, int x) {
 
 
 class Solution {
-    public:
-      int findFloor(vector<int>& arr, int x) {
-          int l = 0, h = arr.size() - 1, floorVal = -1;
-  
-          while (l <= h) {
-              int mid = l + (h - l) / 2;
-  
-              if (arr[mid] <= x) {
-                  floorVal = arr[mid]; // সম্ভাব্য ফ্লোর সংরক্ষণ
-                  l = mid + 1;
-              } 
-              else {
-                  h = mid - 1;
-              }
-          }
-  
-          return floorVal; // যদি ফ্লোর না থাকে, -1 রিটার্ন করবো
-      }
-  };
+public:
+    int findFloor(vector<int>& arr, int x) {
+        int l = 0, h = arr.size() - 1, floorVal = -1;
 
-  
-  class Solution {
-    public:
-  
-      int findFloor(vector<int>& arr, int k) {
-          if(arr[0] > k){
-              return -1;
-          }
-          for(int i=0; i<arr.size(); i++){
-              if(arr[i] > k){
-                  return i - 1;
-              }
-          }
-          return arr.size() - 1;
-          
-      }
-  };
-  
+        while (l <= h) {
+            int mid = l + (h - l) / 2;
+
+            if (arr[mid] <= x) {
+                floorVal = arr[mid]; // সম্ভাব্য ফ্লোর সংরক্ষণ
+                l = mid + 1;
+            } 
+            else {
+                h = mid - 1;
+            }
+        }
+
+        return floorVal; // যদি ফ্লোর না থাকে, -1 রিটার্ন করবো
+    }
+};
+
+
+class Solution {
+public:
+
+    int findFloorCopy(vector<int>& arr, int k) {
+        if(arr[0] > k){
+            return -1;
+        }
+        for(int i=0; i<arr.size(); i++){
+            if(arr[i] > k){
+                return i - 1;
+            }
+        }
+        return arr.size() - 1;
+        
+    }
+};
+
 
   
 int main() {
