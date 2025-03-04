@@ -39,3 +39,15 @@ public:
  * int param_3 = obj->top();
  * int param_4 = obj->getMin();
  */
+
+int main() {
+    MinStack* obj = new MinStack();
+    obj->push(-2);
+    obj->push(0);
+    obj->push(-3);
+    cout << obj->getMin() << endl; // -3
+    obj->pop();
+    cout << obj->top() << endl; // 0
+    cout << obj->getMin() << endl; // -2
+    return 0;
+}
