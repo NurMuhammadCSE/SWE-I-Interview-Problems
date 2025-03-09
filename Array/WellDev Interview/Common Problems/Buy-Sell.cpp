@@ -30,7 +30,6 @@ public:
                 max_profit = max(max_profit, price - min_price); // Update max profit if possible
             }
         }
-
         return max_profit; // Return the best profit found
     }
 };
