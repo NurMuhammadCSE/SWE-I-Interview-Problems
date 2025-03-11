@@ -1,0 +1,49 @@
+What is Object-Oriented Programming (OOP)?
+Object-Oriented Programming (OOP) is a programming paradigm based on the concept of objects. It helps organize code by grouping related properties and behaviors into objects.
+
+Key Concepts of OOP:
+1. Class:
+A class is a blueprint or template for creating objects. It defines common properties and behaviors shared by all objects of that type.
+Example: A Car class with properties like steering wheels, seats, brakes, etc.
+
+2. Object:
+An object is an instance of a class. It represents a real-world entity with specific characteristics and behaviors.
+
+Constructors & Destructors
+Constructor:
+
+A special method with the same name as the class.
+It is automatically called when an object is created.
+It does not have a return type.
+Allocates memory for the object.
+Types of Constructors:
+
+Default Constructor: Does not take any arguments.
+Parameterized Constructor: Takes arguments to initialize an object.
+Copy Constructor: Used to copy properties from one object to another.
+Destructor:
+
+Automatically called when an object is destroyed.
+Frees allocated resources.
+Opposite of a constructor.
+Important OOP Features
+this Pointer:
+
+A special pointer in C++ that refers to the current object.
+Example: this->property refers to the property of the current object.
+Static Variables:
+
+Declared as static inside a function or class.
+They are initialized only once and persist for the lifetime of the program.
+Overloading vs. Overriding:
+
+Overloading: Compile-time polymorphism where multiple methods have the same name but different parameters.
+Overriding: Runtime polymorphism where a subclass redefines a method from its parent class.
+Why Use Object-Oriented Programming?
+OOP provides several benefits, including:
+✅ Better Code Readability & Organization – Code is structured into logical units.
+✅ Reusability – Classes and objects can be reused across projects.
+✅ Encapsulation – Data is hidden and accessed only through defined interfaces.
+✅ Maintainability & Scalability – Code is easier to manage and extend.
+
+By using OOP principles, we can create efficient, modular, and reusable code. 🚀

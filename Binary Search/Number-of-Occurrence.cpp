@@ -4,7 +4,6 @@ using namespace std;
 class Solution
 {
 public:
-    // প্রথম অবস্থান খুঁজতে Binary Search
     int findFirstPosition(vector<int> &arr, int target)
     {
         int low = 0, high = arr.size() - 1, first = -1;

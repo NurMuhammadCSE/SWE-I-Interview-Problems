@@ -4,6 +4,37 @@ using namespace std;
 class Solution {
 public:
     int findMin(vector<int>& nums) {
+        int mini = nums[0];
+        for (int i = 1; i < nums.size(); i++) {
+            mini = min(mini, nums[i]);
+        }
+        return mini;
+    }
+};
+
+class Solution {
+public:
+    int findMin(vector<int>& nums) {
+        int l = 0, h = nums.size() - 1;
+
+        while (l < h) {
+            int mid = l + (h - l) / 2;
+
+            if (nums[mid] > nums[h]) {  
+                l = mid + 1;  // 🔹 Pivot ডান দিকে আছে
+            } else {
+                h = mid;  // 🔹 Pivot mid বা বামে আছে
+            }
+        }
+        
+        return nums[l];  // 🔹 Minimum element
+    }
+};
+    
+
+class Solution {
+public:
+    int findMin(vector<int>& nums) {
         int start = 0, end = nums.size() - 1;
 
         while (start < end) {

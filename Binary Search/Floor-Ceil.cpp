@@ -1,31 +1,11 @@
+/*
+✅ Floor এবং Ceil
+1️⃣ Floor(x): x এর বড় বা সমান সর্বোচ্চ সংখ্যা
+2️⃣ Ceil(x): x এর ছোট বা সমান সর্বনিম্ন সংখ্যা
+*/
+
 #include<bits/stdc++.h>
 using namespace std;
-
-class Solution {
-    public:
-      vector<int> getFloorAndCeil(int x, vector<int> &arr) {
-          int floorVal = -1, ceilVal = -1;
-          int l = 0, h = arr.size() - 1;
-  
-          sort(arr.begin(), arr.end()); // অ্যারে সর্ট করা প্রয়োজন
-  
-          while (l <= h) {
-              int mid = l + (h - l) / 2;
-  
-              if (arr[mid] == x) {
-                  return {x, x}; // যদি x অ্যারেতে থাকে, তাহলে floor এবং ceil একই হবে।
-              } else if (arr[mid] < x) {
-                  floorVal = arr[mid]; // সম্ভাব্য Floor
-                  l = mid + 1;
-              } else {
-                  ceilVal = arr[mid]; // সম্ভাব্য Ceil
-                  h = mid - 1;
-              }
-          }
-  
-          return {floorVal, ceilVal};
-      }
-  };
 
 // Coding Ninjas Solution
 pair<int, int> getFloorAndCeil(vector<int> &a, int n, int x) {
@@ -83,7 +63,6 @@ public:
 
 class Solution {
 public:
-
     int findFloorCopy(vector<int>& arr, int k) {
         if(arr[0] > k){
             return -1;
@@ -94,9 +73,35 @@ public:
             }
         }
         return arr.size() - 1;
-        
     }
 };
+
+
+class Solution {
+    public:
+      vector<int> getFloorAndCeil(int x, vector<int> &arr) {
+          int floorVal = -1, ceilVal = -1;
+          int l = 0, h = arr.size() - 1;
+  
+          sort(arr.begin(), arr.end()); // অ্যারে সর্ট করা প্রয়োজন
+  
+          while (l <= h) {
+              int mid = l + (h - l) / 2;
+  
+              if (arr[mid] == x) {
+                  return {x, x}; // যদি x অ্যারেতে থাকে, তাহলে floor এবং ceil একই হবে।
+              } else if (arr[mid] < x) {
+                  floorVal = arr[mid]; // সম্ভাব্য Floor
+                  l = mid + 1;
+              } else {
+                  ceilVal = arr[mid]; // সম্ভাব্য Ceil
+                  h = mid - 1;
+              }
+          }
+  
+          return {floorVal, ceilVal};
+      }
+  };
 
 
   
