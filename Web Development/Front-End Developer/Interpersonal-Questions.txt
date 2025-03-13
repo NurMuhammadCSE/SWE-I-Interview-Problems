@@ -1,0 +1,13 @@
+1. Tell me about yourself?
+- Name, Education, District
+- Web Development Journey Start
+- Strong Foundation
+- Team Project, Features, Technologies
+- Personal Project, Features, Technologies
+- Current Learning -> DSA, OOP, SQL, System Design
+
+2. Strongest
+3. You came from different background and why
+in my childhood my interested subject is Math, Science but Problem Solving 
+
+What and Why use JWT?
