@@ -11,3 +11,39 @@
 in my childhood my interested subject is Math, Science but Problem Solving 
 
 What and Why use JWT?
+
+My name is Nur Muhammad, but you can call me Nur. I’m currently studying Al-Quran and Islamic Studies at Govt. Madrasah-e-Alia, Dhaka.
+
+I’m also a full stack developer specializing in the MERN stack, and my development journey began in 2020. Over the years, I’ve built a range of projects, including Resume Craft, and Electronic Gadget.
+
+For my Resume Craft Project. It is team Project.
+Technology: React.js, Material UI, Redux, TypeScript, MongoDB, Prisma, Node.js, Express, JWT, Firebase
+Contribution: I led the front-end design and functionality of both the user dashboard and admin dashboard, incorporating intuitive interfaces and robust features to enhance the user experience.
+
+
+I have been strong foundation in Javascript, Typescript, React, Redux RTK, Next.JS, Node.JS, Mongoose, JWT, SQL, Object Oriented Programming and Data Structure and Algorithms.
+
+
+Why Should we hire you?
+Although I am a fresher, I have built multiple projects using React and JavaScript, and I have a strong understanding of web development principles. I am a quick learner and always eager to take on new challenges. Given the opportunity, I am confident that I can contribute effectively to your team and grow along with the company.
+
+
+
+
+I believe that i am a great fit for this role . I'm a self motivated person and give my 100% to any task that is given to me . That's why I have been able to do good in my academics. and surely I will do the same for any project that is given to me in the company . I also work we'll both as  an individual contribute as well as a team member. Overall , I believe I can contribute  a lot in the organization with my skill and will.
+
+
+
+
+Do you have any Questions?
+1. Can u please tell me more about the company culture?
+“I would love to learn more about the company culture. Can you tell me what it's like to work here and what values the company emphasizes?”
+
+2. What can I do to prepare myself better for this job if I get selected?
+“If selected, what can I do in advance to better prepare myself for the role and be more effective from day one?”
+
+3. What do you like the most about working in this organization?
+“I’m curious, what’s the best part about working in this organization? What keeps you excited about your work here?”
+
+4. Can you share the day to day responsibilities of this role?
+“Could you walk me through the day-to-day responsibilities of this role? I’d like to get a better understanding of what a typical workday looks like.”
