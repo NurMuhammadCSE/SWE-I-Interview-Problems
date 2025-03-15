@@ -152,9 +152,9 @@ public:
     vector<vector<string>> groupAnagrams(vector<string>& strs) {
         unordered_map<string, vector<string>> mp;
         for (string s : strs) {
-            string t = s;
-            sort(t.begin(), t.end());
-            mp[t].push_back(s);
+            string word = s;
+            sort(word.begin(), word.end());
+            mp[word].push_back(s);
         }
         vector<vector<string>> res;
         for (auto x : mp) {
@@ -378,7 +378,7 @@ public:
                 int cnt = 1;
                 int x = it;
                 while (st.find(x + 1) != st.end()) {
-                    x = x + 1;
+                    x++;
                     cnt++;
                 }
                 longest = max(longest, cnt);
