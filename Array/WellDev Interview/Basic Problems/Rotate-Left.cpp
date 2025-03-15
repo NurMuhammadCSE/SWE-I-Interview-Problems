@@ -1,28 +1,28 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-vector<int> leftRotate(vector<int> arr, int d){
-    int n = arr.size();
-    d= d % n;
-    vector<int> result;
-    for (int i = 0; i < n; i++)
-    {
-        result.push_back(arr[(i+d)%n]);
-    }
-    return result;
-}
+// vector<int> leftRotate(vector<int> arr, int d){
+//     int n = arr.size();
+//     d= d % n;
+//     vector<int> result;
+//     for (int i = 0; i < n; i++)
+//     {
+//         result.push_back(arr[(i+d)%n]);
+//     }
+//     return result;
+// }
 
-void leftRotateCourse(vector<int>& arr, int k) {
-    int n = arr.size();
-    k = k % n; // বড় k হলে মোডুলো নিলে সহজ হবে
-    vector<int> temp(n);
+// void leftRotateCourse(vector<int>& arr, int k) {
+//     int n = arr.size();
+//     k = k % n;
+//     vector<int> temp(n);
 
-    for (int i = 0; i < n; i++) {
-        temp[i] = arr[(i + k) % n]; // নতুন ইনডেক্স এ সেট করা
-    }
+//     for (int i = 0; i < n; i++) {
+//         temp[i] = arr[(i + k) % n];
+//     }
     
-    arr = temp; // আসল অ্যারেতে সেট করা
-}
+//     arr = temp;
+// }
 
 class Solution {
 public:
@@ -37,20 +37,21 @@ public:
 
 
 int main(){
+    Solution obj;
     vector<int> arr = {1,2,3,4,5};
     int d = 2;
-    vector<int> result = leftRotate(arr, d);
-    for (int i = 0; i < result.size(); i++)
+    obj.leftRotate(arr, d);
+    for (int i = 0; i < arr.size(); i++)
     {
-        cout<<result[i]<<" ";
+        cout<<arr[i]<<" ";
     }
     
-    vector<int> arr = {1, 2, 3, 4, 5};
-    int k = 2;
-    leftRotateCourse(arr, k);
+    // vector<int> arr = {1, 2, 3, 4, 5};
+    // int k = 2;
+    // leftRotateCourse(arr, k);
     
-    for (int num : arr) {
-        cout << num << " ";
-    }
+    // for (int num : arr) {
+    //     cout << num << " ";
+    // }
     return 0;
 }
