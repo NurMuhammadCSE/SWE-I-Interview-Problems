@@ -21,7 +21,6 @@ vector<int> nextSmallerElement(vector<int> &arr, int n)
 }
 
 
-#include<bits/stdc++.h>
 vector<int> nextSmallerElement(vector<int> &arr, int n)
 {
     vector<int> result(n);
