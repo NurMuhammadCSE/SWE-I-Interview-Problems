@@ -2,6 +2,10 @@
 using namespace std;
 
 class Student{
+private:
+    string id;
+    int salary;
+
 public:
     string name;
     int age;
@@ -12,18 +16,22 @@ public:
         cout << "Age: " << age << endl;
         cout << "Roll: " << roll << endl;
     }
-};
 
-class Car{
-public:
-    string name;
-    string model;
-    int price;
+    // Getter Methods
+    void setId(string id){
+        this->id = id;
+    }
+    void setSalary(int salary){
+        this->salary = salary;
+    }
 
-    void show(){
-        cout << "Name: " << name << endl;
-        cout << "Model: " << model << endl;
-        cout << "Price: " << price << endl;
+    // Setter Methods
+    string getId(){
+        return id;
+    }
+
+    int getSalary(){
+        return salary;
     }
 };
 
@@ -34,14 +42,11 @@ int main() {
     s1.roll = 101;
 
     s1.show(); // calling the show() method of the object s1
+    s1.setId("1234");
+    s1.setSalary(50000);
 
-
-    Car c1; // c1 is an object of class Car
-    c1.name = "BMW";
-    c1.model = "X5";
-    c1.price = 100000;
-
-    c1.show(); // calling the show() method of the object c1
+    cout << "ID: " << s1.getId() << endl;
+    cout << "Salary: " << s1.getSalary() << endl;
 
     return 0;
 }
