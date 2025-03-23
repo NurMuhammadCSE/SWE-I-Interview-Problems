@@ -1,27 +1,25 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-class Teacher{
+class Student{
 public:
-    int id;
     string name;
-    string dept;
-    string subject;
+    int age;
+    int roll;
 
-    Teacher(){
-        cout << "Default Constructor" << endl;
+    void show(){
+        cout << "Name: " << name << endl;
+        cout << "Age: " << age << endl;
+        cout << "Roll: " << roll << endl;
     }
 };
 
-int main(){
-    Teacher t1;
-    t1.id = 101;
-    t1.dept = "CSE";
-    t1.name = "Devid Miller";
-    t1.subject = "DSA";
+int main() {
+    Student s1; // s1 is an object of class Student
+    s1.name = "John";
+    s1.age = 20;
+    s1.roll = 101;
 
-    cout << t1.id << endl;
-    cout << t1.dept << endl;
-    cout << t1.subject << endl;
-    cout << t1.name << endl;
+    s1.show(); // calling the show() method of the object s1
+    return 0;
 }
