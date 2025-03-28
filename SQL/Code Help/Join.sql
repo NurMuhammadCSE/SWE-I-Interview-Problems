@@ -71,3 +71,10 @@ from Employee e
 SELECT e.dept_id, e.name, d.dept_name
 FROM Employee e
     CROSS JOIN department d;
+
+-- (6) SELF JOIN
+SELECT e1.name, e2.name
+FROM employee e1, employee e2
+WHERE
+    e1.dept_id = e2.dept_id
+    AND e1.employee_id != e2.employee_id;

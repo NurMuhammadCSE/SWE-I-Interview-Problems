@@ -102,7 +102,9 @@ VALUES (
         'HR'
     );
 ;
-INSERT INTO Worker VALUES (
+INSERT INTO
+    Worker
+VALUES (
         111,
         'Helen',
         'Doe',
@@ -207,7 +209,12 @@ SELECT department, COUNT(department) FROM Worker GROUP BY department;
 SELECT department, COUNT(department) FROM Worker GROUP BY department;
 
 -- Having
-SELECT department, COUNT(department) FROM Worker GROUP BY department HAVING COUNT(department) > 1;
+SELECT department, COUNT(department)
+FROM Worker
+GROUP BY
+    department
+HAVING
+    COUNT(department) > 1;
 
 -- Limit
 SELECT * FROM Worker LIMIT 5;
@@ -227,5 +234,10 @@ SELECT department, SUM(salary) FROM Worker GROUP BY department;
 SELECT department, COUNT(salary) FROM Worker GROUP BY department;
 
 -- Group By Having
-SELECT department, COUNT(department) from Worker GROUP BY department HAVING COUNT(department) > 1;
-
+SELECT department, COUNT(department)
+from Worker
+GROUP BY
+    department
+HAVING
+    COUNT(department) > 1;
+    
