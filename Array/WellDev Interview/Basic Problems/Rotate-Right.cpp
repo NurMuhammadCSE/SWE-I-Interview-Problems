@@ -24,6 +24,31 @@ void rightRotate(vector<int>& arr, int k) {
     arr = temp; // আসল অ্যারেতে সেট করা
 }
 
+class Solution 
+{
+public:
+    void rotate(int nums[], int n, int k) 
+    {
+        if ((n == 0) || (k <= 0))
+        {
+            return;
+        }
+        
+        // Make a copy of nums
+        vector<int> numsCopy(n);
+        for (int i = 0; i < n; i++)
+        {
+            numsCopy[i] = nums[i];
+        }
+        
+        // Rotate the elements.
+        for (int i = 0; i < n; i++)
+        {
+            nums[(i + k)%n] = numsCopy[i];
+        }
+    }
+};
+
 int main(){
     vector<int> arr = {1,2,3,4,5};
     int d = 2;
