@@ -33,7 +33,6 @@ public:
     bool empty(){
         return input.empty() and output.empty();
     }
-
 };
 
 int main(){
