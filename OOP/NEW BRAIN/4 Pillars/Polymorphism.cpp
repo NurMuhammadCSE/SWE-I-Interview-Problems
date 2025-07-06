@@ -1,3 +1,8 @@
+// Polymorphism in C++
+/*
+The word "Polymorphism" means "many forms". It describes the concept that different classes can be used with the same interface. Polymorphism is the ability of objects to take on many forms depending on their context. In C++, polymorphism is achieved through method overloading and method overriding.
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

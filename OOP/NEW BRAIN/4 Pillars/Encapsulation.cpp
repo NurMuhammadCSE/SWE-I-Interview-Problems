@@ -1,3 +1,9 @@
+// Encapsulation: It describes the idea of bundling or wrapping of data (attributes) and methods (functions)  into a single unit called a class. 
+
+/*
+Advantages:
+1. Encapsulation protects an object from unwanted access and modification.
+*/
 #include <iostream>
 using namespace std;
 

@@ -7,6 +7,9 @@
 ওই নকশাটা হচ্ছে Class
 আর তুমি সেই নকশা অনুযায়ী বানানো ঘরগুলো যেগুলো বাসযোগ্য – সেগুলো হচ্ছে Object
 */
+
+// An object is any real-world entity that has some characteristics (properties) and behaviors (actions). It is also called an instance of a class.
+
 #include <bits/stdc++.h>
 using namespace std;
 

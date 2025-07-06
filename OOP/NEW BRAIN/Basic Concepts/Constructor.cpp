@@ -10,6 +10,18 @@ Constructor হলো ক্লাসের বিশেষ ফাংশন, য
 🛠️ ডিফল্ট বা প্যারামিটারসহ হতে পারে constructor overloading
 */
 
+/*
+1. Constructor are special methods whose name is the same as the class.
+2. Constructor is automatically called when an object is created.
+3. Constructor does not have a return type, not even void.
+4. Memory allocation happens when an object is created.
+
+Types of Constructors:
+1. Default Constructor: No parameters, initializes members to default values.
+2. Parameterized Constructor: Takes parameters to initialize members with specific values.
+3. Copy Constructor: Initializes an object using another object of the same class.
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -79,19 +91,6 @@ public:
     }
 };
 
-class Box {
-public:
-    int width;
-
-    Box() {
-        width = 0;
-    }
-
-    Box(int w) {
-        width = w;
-    }
-};
-
 class StudentTwo {
 public:
     string name;
@@ -118,10 +117,9 @@ public:
 
 int main() {
     Student s1("Nur", 22);     // constructor auto call হচ্ছে
-    Student s2("Zakir", 30);
-
+    Student s2("Muhammad", 30);
     s1.display();  // Output: Name: Nur, Age: 22
-    s2.display();  // Output: Name: Zakir, Age: 20
+    s2.display();  // Output: Name: Muhammad, Age: 20
 
     Car car1;  // Default constructor call
     cout << "Car brand: " << car1.brand << endl;  // Output: Default Brand
@@ -132,11 +130,6 @@ int main() {
     Person p1("Alice", 25);
     Person p2 = p1;  // Copy constructor call
     p2.info();  // Output: Name: Alice, Age: 25
-
-    Box box1;  // Default constructor call
-    Box box2(10);  // Parameterized constructor call
-    cout << "Box1 width: " << box1.width << endl;  // Output: Box1 width: 0
-    cout << "Box2 width: " << box2.width << endl;  // Output: Box2 width: 10
 
     StudentTwo student1("John", 20);
     StudentTwo student2 = student1;  // Copy constructor call

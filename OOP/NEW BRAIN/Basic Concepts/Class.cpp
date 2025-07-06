@@ -2,16 +2,20 @@
 // Class is a user-defined data type that can contain data members and member functions.
 // Class is a collection of data members and member functions.
 // class is the only logical representation of an object.
+// A class is a group of objects that share common properties and behaviors.
 
 #include<bits/stdc++.h>
 using namespace std;
 
 class Student{
 public:
+    // Data members => attributes, properties
+    // Member variables
     string name;
     int age;
     int id;
 
+    // Member function => Method
     void displayInfo(){
         cout << "Name: " << name << endl;
         cout << "Age: " << age << endl;
@@ -57,13 +61,6 @@ int main(){
     student1.id = 12345;
     student1.displayInfo(); // Calling member function to display information
 
-    Student student2; // Creating another object of class Student
-    student2.name = "Jane Smith";
-    student2.age = 22;
-    student2.id = 67890;
-    student2.displayInfo(); // Calling member function to display information
-
-
     Car car1; // Creating an object of class Car
     car1.brand = "Toyota";
     car1.year = 2020;
@@ -96,7 +93,4 @@ int main(){
 অবজেক্ট = সেই নকশা দিয়ে বানানো জিনিস
 ক্লাস-এর ভিতরে ডেটা + ফাংশন = একটা ইউনিট
 কোড Reusability, Structure, এবং Maintainability এর জন্য খুবই গুরুত্বপূর্ণ
-
-
-
 */

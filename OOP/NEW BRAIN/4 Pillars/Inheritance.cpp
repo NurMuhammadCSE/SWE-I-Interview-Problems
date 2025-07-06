@@ -1,3 +1,15 @@
+// Inheritance allows a child class (called the derived class or child class) to inherit properties and behaviors (attributes and methods) from another parent class (called the base class or parent class). 
+// Inheritance is a feature of OOP which allows subclasses to inherit properties and methods from a parent class.
+/*
+Types of Inheritance:
+1. Single Inheritance: A derived class inherits from a single base class.
+2. Multiple Inheritance: A derived class inherits from multiple base classes.   
+3. Multilevel Inheritance: A derived class inherits from another derived class.
+4. Hierarchical Inheritance: Multiple derived classes inherit from a single base class. 
+5. Hybrid Inheritance: A combination of two or more types of inheritance.
+
+*/
+
 #include <iostream>
 using namespace std;
 
